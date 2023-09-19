@@ -1,0 +1,295 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Space Mono', monospace;
+  color: #F3F3F8;
+  background: url(assets/images/portfolio_background.png) center repeat, #222038;
+  background-size: 12%;
+}
+
+body::-webkit-scrollbar{
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+h1, h2 {
+  font-family: 'Sriracha';
+  color:#F1D8B0;
+  font-size: 120px;
+  line-height: 125px;
+  margin: 0;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+/* navbar */
+header {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0px;
+}
+
+.navbar {
+  display: flex;
+  padding: 20px 100px;
+}
+
+.navbar.active {
+  background-color: rgb(34 32 56 / 90%);
+}
+
+.navbar-list {
+  display: flex;
+  gap: 85px;
+  list-style: none;
+  font-weight: 700;
+}
+
+.navbar p {
+  flex-grow: 1;
+}
+
+.navbar-list-item {
+  color: #F3F3F8;
+}
+
+.navbar-list-item.active {
+  color:#F1D8B0;
+}
+
+/* navigation */
+.navigation{
+  margin: 0;
+    padding: 0;
+    position: fixed;
+    right: 30px;
+    list-style: none;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.navigation li {
+  width: 8px;
+  height: 8px;
+  background: #F3F3F8;
+  border-radius: 50%;
+  transition: all 0.3s;
+}
+
+.navigation li:hover,
+.navigation li.selected{
+  transform: scale(1.5);
+  background: #F1D8B0;
+  cursor: pointer;
+}
+
+/* section one */
+.section-one {
+  display: flex;
+  margin: 80px 100px 200px 100px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* section two */
+.section-two {
+  display: flex;
+  flex-direction: column;
+  align-items:center ;
+  margin: 100px 100px 200px 100px;
+}
+
+.section-two-text-container {
+  margin: 50px 0 50px 0;
+}
+
+.section-two h2 {
+  text-align: center;
+  font-size: 100px;
+  margin-bottom: 25px;
+}
+
+.section-two h3 {
+  text-align: left;
+  color:#F1D8B0;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.section-two .p-aboutme {
+  width: 600px;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: left;
+}
+
+.section-two .p-title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.section-two .p-subtitle {
+  font-size: 15px;
+}
+
+.section-two .p-language {
+  color: #F1D8B0;
+  font-weight: 700;
+
+}
+
+.education-section {
+  margin-bottom: 50px;
+}
+
+.education-item {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.star {
+  position: relative;
+  top: 12px;
+  color: #F1D8B0;
+}
+
+.skills-list {
+  display: flex;
+  gap: 30px;
+}
+
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-icon {
+  /* background-color: #F3F3F8; */
+  border-radius: 20px;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-img {
+  font-size: 50px;
+  color: #F1D8B0;
+}
+
+/* section three */
+.section-three {
+  text-align: center;
+  margin: 100px 100px 100px 100px;
+}
+
+.section-three h3 {
+  font-weight: 700;
+  color: #F1D8B0;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-text {
+  text-align: left;
+}
+
+.project {
+  display: flex;
+}
+
+/* section four */
+.section-four {
+  /* height:100vh;
+  width: 100vw; */
+  text-align: center;
+  margin: 100px 100px 100px 100px;
+}
+
+
+/* buttons */
+.section-one-buttons {
+  gap: 20px;
+  display: flex;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.btn-talk {
+  background-color: #F1D8B0;
+  border-radius: 10px;
+  width: 150px;
+  height: 40px;
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-size: 18px;
+  color:  #222038;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #F1D8B0;
+}
+
+.btn-download {
+  font-family: 'Space Mono', monospace;
+  font-weight: 700;
+  font-size: 18px;
+  width: 150px;
+  height: 40px;
+  background: none;
+  color: #F3F3F8;
+  border-radius: 10px;
+  border: 3px solid #F1D8B0;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* footer */
+footer {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  bottom: 0;
+}
+
+.footer-list {
+  margin-left: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+  list-style: none;
+}
+
+.footer-list-item {
+  color:#F1D8B0;
+  font-size: 20px;
+}
+
+.line {
+    left: 7px;
+    position: relative;
+}
