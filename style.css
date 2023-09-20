@@ -6,7 +6,7 @@
 body {
   font-family: 'Space Mono', monospace;
   color: #F3F3F8;
-  background: url(assets/images/portfolio_background.png) center repeat, #222038;
+  background: url(assets/images/portfolio_background-01.png) center repeat, #222038;
   background-size: 12%;
 }
 
@@ -49,7 +49,7 @@ header {
 
 .navbar-list {
   display: flex;
-  gap: 85px;
+  gap: 75px;
   list-style: none;
   font-weight: 700;
 }
@@ -96,19 +96,34 @@ header {
 }
 
 /* section one */
-.section-one {
+/* .section-one {
   display: flex;
   margin: 80px 100px 200px 100px;
   align-items: center;
   justify-content: space-between;
+} */
+
+.section-one {
+  height:100vh;
+  text-align: center;
+  padding: 100px;
+  margin: 0 100px 0 100px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
+
 
 /* section two */
 .section-two {
+  height: 200vh;
   display: flex;
   flex-direction: column;
   align-items:center ;
-  margin: 100px 100px 200px 100px;
+  padding: 100px;
+  margin: 0 100px 0 100px;
 }
 
 .section-two-text-container {
@@ -126,7 +141,7 @@ header {
   color:#F1D8B0;
   font-weight: 700;
   font-size: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .section-two .p-aboutme {
@@ -137,18 +152,24 @@ header {
 }
 
 .section-two .p-title {
-  font-weight: 700;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.p-title span {
+  color:#F1D8B0;
   font-size: 18px;
+  font-weight: 700;
 }
 
 .section-two .p-subtitle {
-  font-size: 15px;
+  font-size: 14px;
 }
 
 .section-two .p-language {
-  color: #F1D8B0;
+  color: #F3F3F8;
   font-weight: 700;
-
+  text-align: center;
 }
 
 .education-section {
@@ -161,15 +182,30 @@ header {
   align-items: flex-start;
 }
 
+.education-item-info{
+  display: flex;
+}
+
+.education-line {
+  left: -18px;
+  position: relative;
+}
+
 .star {
   position: relative;
   top: 12px;
   color: #F1D8B0;
 }
 
+.skills-section {
+  display: flex;
+  flex-direction: column;
+}
+
 .skills-list {
   display: flex;
   gap: 30px;
+  margin-bottom: 15px;
 }
 
 .skill-item {
@@ -183,7 +219,6 @@ header {
   border-radius: 20px;
   width: 80px;
   height: 80px;
-  margin-bottom: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -196,8 +231,10 @@ header {
 
 /* section three */
 .section-three {
+  height:100vh;
   text-align: center;
-  margin: 100px 100px 100px 100px;
+  padding: 100px;
+  margin: 0 100px 0 100px;
 }
 
 .section-three h3 {
@@ -221,18 +258,29 @@ header {
 
 /* section four */
 .section-four {
-  /* height:100vh;
-  width: 100vw; */
+  height:100vh;
   text-align: center;
-  margin: 100px 100px 100px 100px;
+  padding: 100px;
+  margin: 0 100px 0 100px;
+}
+.contact-list {
+  display: flex;
+  margin-top: 50px;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
 }
 
+.contact-list-item {
+  font-size: 50px;
+  color: #F1D8B0;
+}
 
 /* buttons */
 .section-one-buttons {
-  gap: 20px;
+  gap: 80px;
   display: flex;
-  margin-top: 50px;
+  /* margin-top: 50px; */
   text-align: center;
 }
 
@@ -290,6 +338,6 @@ footer {
 }
 
 .line {
-    left: 7px;
-    position: relative;
+  left: 7px;
+  position: relative;
 }
