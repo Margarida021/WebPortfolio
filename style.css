@@ -3,11 +3,18 @@
   padding: 0;
 }
 
+::before,
+::after {
+box-sizing: border-box;
+}
+
 body {
   font-family: 'Space Mono', monospace;
   color: #F3F3F8;
   background: url(assets/images/portfolio_background-01.png) center repeat, #222038;
   background-size: 12%;
+  margin: 0;
+  padding: 0;
 }
 
 body::-webkit-scrollbar{
@@ -19,23 +26,18 @@ a {
 }
 
 
-h1, h2 {
-  font-family: 'Sriracha';
-  color:#F1D8B0;
-  font-size: 120px;
-  line-height: 125px;
-  margin: 0;
-}
-
 h3 {
   font-weight: 400;
 }
 
 /* navbar */
 header {
-  position: -webkit-sticky; /* Safari */
+  /* position: -webkit-sticky;
   position: sticky;
-  top: 0px;
+  top: 0px; */
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .navbar {
@@ -95,6 +97,14 @@ header {
   cursor: pointer;
 }
 
+.sections-container {
+  margin-top: 65px; /* Adjust this value to match the header height */
+  margin-bottom: 145px; /* Adjust this value to match the footer height */
+  overflow-y: scroll;
+  height: calc(100vh - 210px);
+
+}
+
 /* section one */
 /* .section-one {
   display: flex;
@@ -104,36 +114,42 @@ header {
 } */
 
 .section-one {
-  height:100vh;
-  text-align: center;
-  padding: 100px;
-  margin: 0 100px 0 100px;
-  align-items: center;
-  justify-content: space-between;
+  height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
   text-align: center;
+  justify-content: center;
+  margin: 0 100px 0 100px;
 }
 
+.section-one h1 {
+  margin-bottom: 40px;
+  font-family: 'Sriracha';
+  color:#F1D8B0;
+  font-size: 120px;
+  line-height: 125px;
+}
 
 /* section two */
 .section-two {
-  height: 200vh;
+  height: 150vh;
   display: flex;
   flex-direction: column;
   align-items:center ;
-  padding: 100px;
+  padding-top: 100px;
   margin: 0 100px 0 100px;
 }
 
-.section-two-text-container {
+/* .section-two-text-container {
   margin: 50px 0 50px 0;
-}
+} */
 
 .section-two h2 {
   text-align: center;
   font-size: 100px;
-  margin-bottom: 25px;
+  font-family: 'Sriracha';
+  color:#F1D8B0;
 }
 
 .section-two h3 {
@@ -145,10 +161,10 @@ header {
 }
 
 .section-two .p-aboutme {
-  width: 600px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
   text-align: left;
+  width: 900px;
 }
 
 .section-two .p-title {
@@ -173,7 +189,7 @@ header {
 }
 
 .education-section {
-  margin-bottom: 50px;
+  margin-top: 60px;
 }
 
 .education-item {
@@ -187,25 +203,27 @@ header {
 }
 
 .education-line {
-  left: -18px;
+  left: -21px;
   position: relative;
 }
 
 .star {
   position: relative;
-  top: 12px;
+  top: 5px;
   color: #F1D8B0;
+  font-size: 18px;
 }
 
 .skills-section {
   display: flex;
   flex-direction: column;
+  margin-top: 60px;
 }
 
 .skills-list {
   display: flex;
   gap: 30px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .skill-item {
@@ -215,7 +233,6 @@ header {
 }
 
 .skill-icon {
-  /* background-color: #F3F3F8; */
   border-radius: 20px;
   width: 80px;
   height: 80px;
@@ -231,38 +248,82 @@ header {
 
 /* section three */
 .section-three {
-  height:100vh;
+  height: 100vh;
   text-align: center;
-  padding: 100px;
+  padding-top: 100px;
   margin: 0 100px 0 100px;
 }
 
+.section-three h2 {
+  text-align: center;
+  font-size: 100px;
+  font-family: 'Sriracha';
+  color:#F1D8B0;
+}
+
 .section-three h3 {
+  text-align: center;
   font-weight: 700;
   color: #F1D8B0;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.section-three .p-projects {
+  font-size: 15px;
+}
+
+.section-three .p-subtitle {
+  font-size: 14px;
 }
 
 .projects-container {
   display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 60px;
+}
+
+.project {
+  display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
+  width: 300px;
 }
 
 .project-text {
   text-align: left;
 }
 
-.project {
-  display: flex;
+.project-image {
+  width: 300px;
+  height: 200px;
+  border-radius: 20px;
 }
 
 /* section four */
 .section-four {
-  height:100vh;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
-  padding: 100px;
+  justify-content: center;
   margin: 0 100px 0 100px;
 }
+
+.section-four h2 {
+  text-align: center;
+  font-size: 100px;
+  font-family: 'Sriracha';
+  color:#F1D8B0;
+}
+
+.section-four .p-contacts {
+  font-size: 15px;
+}
+
 .contact-list {
   display: flex;
   margin-top: 50px;
@@ -278,9 +339,8 @@ header {
 
 /* buttons */
 .section-one-buttons {
-  gap: 80px;
+  gap: 50px;
   display: flex;
-  /* margin-top: 50px; */
   text-align: center;
 }
 
@@ -306,7 +366,7 @@ header {
   font-size: 18px;
   width: 150px;
   height: 40px;
-  background: none;
+  background-color: #222038;
   color: #F3F3F8;
   border-radius: 10px;
   border: 3px solid #F1D8B0;
@@ -318,9 +378,9 @@ header {
 
 /* footer */
 footer {
-  position: -webkit-sticky; /* Safari */
-  position: sticky;
+  position: fixed;
   bottom: 0;
+  width: 100%;
 }
 
 .footer-list {
@@ -338,6 +398,6 @@ footer {
 }
 
 .line {
-  left: 7px;
+  left: 9px;
   position: relative;
 }
