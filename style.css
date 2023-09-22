@@ -8,6 +8,11 @@
 box-sizing: border-box;
 }
 
+/* utility */
+html.sr .load-hidden {
+  visibility: hidden;
+}
+
 html {
   scroll-behavior: smooth;
 }
