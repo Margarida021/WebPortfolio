@@ -15,16 +15,15 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <script src="https://kit.fontawesome.com/5e91a1c731.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <script>ScrollReveal({ reset: true });</script>
+  <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+  <script defer src="index.js"></script>
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-  <script src="index.js"></script>
 </head>
 <body>
 
-  <header>
+  <header class="header">
     <div id="nav" class="navbar">
-      <p>PORTFOLIO</p>
+      <p><a href="#home" class="navbar-list-item">PORTFOLIO</a></p>
       <ul class="navbar-list">
         <li><a href="#home" class="navbar-list-item active">Home</a></li>
         <li><a href="#aboutme" class="navbar-list-item">About Me</a></li>
@@ -41,25 +40,11 @@
     <li></li>
   </ul>
 
-  <!-- <section id="home" class="section-one">
-    <div>
-      <h1>Margarida<br>Almeida</h1>
-      <h3><a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=space+mono&duration=4000&pause=350&color=F3F3F8&vCenter=true&width=435&lines=Junior+Full-Stack+Developer+%7C;Designer+%7C" alt="Typing SVG" /></a></h3>
-      <div class="section-one-buttons">
-        <a href="mailto: ana.margarida.almeida92@gmail.com" class="btn-talk">Let's Talk</a>
-        <a href="" class="btn-download">Download CV</a>
-      </div>
-    </div>
-    <div>
-      <img src="assets/images/portfolio_image.png" alt="me-on-tech">
-    </div>
-  </section> -->
-
   <section id="home" class="section-one">
       <h3><a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=space+mono&duration=4000&pause=350&color=F3F3F8&center=true&vCenter=true&width=435&lines=Junior+Full-Stack+Developer;Designer" alt="Typing SVG" /></a></h3>
       <h1>Margarida<br>Almeida</h1>
       <div class="section-one-buttons">
-        <a href="mailto: ana.margarida.almeida92@gmail.com" class="btn-talk">Let's Talk</a>
+        <a href="#contacts" class="btn-talk">Let's Talk</a>
         <a href="assets/CV.pdf" download="" class="btn-download">Download CV</a>
       </div>
   </section>
@@ -204,7 +189,7 @@
   </section>
 
   <section id="projects" class="section-three">
-    <h2>Projects</h2>
+    <h2 class="projects">Projects</h2>
     <p class="p-projects">Some projects developed</p>
     <div class="projects-container">
 
@@ -248,8 +233,8 @@
   </section>
 
   <section id="contacts" class="section-four">
-    <h2>Contacts</h2>
-    <p class="p-contacts">If you are interested in working with me, feel free to reach me out in one of these medias</p>
+    <h2 class="contacts">Contacts</h2>
+    <p class="p-contacts">If you are interested in working with me, feel free to reach out in one of these medias</p>
     <div class="contact-list">
       <a href="mailto: ana.margarida.almeida92@gmail.com" target="_blank"><i class="fa-solid fa-envelope contact-list-item"></i></a>
       <a href="https://github.com/Margarida021" target="_blank"><i class="fa-brands fa-github contact-list-item"></i></a>
@@ -264,10 +249,6 @@
       <li><img src="assets/images/portfolio_line.svg" alt="white-line" class="line"></li>
     </ul>
   </footer>
-  <script>
-  ScrollReveal().reveal('.about-me');
-  ScrollReveal().reveal('.p-aboutme', { delay: 500 });
-  ScrollReveal().reveal('.p-aboutme', { delay: 500 });
-  </script>
+  <script src="scrollReveal.js"></script>
 </body>
 </html>

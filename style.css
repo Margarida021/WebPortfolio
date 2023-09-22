@@ -9,7 +9,7 @@ box-sizing: border-box;
 }
 
 /* utility */
-html.sr .load-hidden {
+.section-one, .about-me, .p-aboutme, .education-section, .skills-section, .projects, .p-projects, .projects-container, .contacts, .p-contacts, .contact-list {
   visibility: hidden;
 }
 
@@ -41,12 +41,10 @@ h3 {
 
 /* navbar */
 header {
-  /* position: -webkit-sticky;
-  position: sticky;
-  top: 0px; */
   position: fixed;
   top: 0;
   width: 100%;
+  transition: all 0.5s;
 }
 
 .navbar {
@@ -54,7 +52,8 @@ header {
   padding: 20px 100px;
 }
 
-.navbar.active {
+.navbar-scrolled {
+  backdrop-filter: blur(6px);
   background-color: rgb(34 32 56 / 90%);
 }
 
@@ -73,22 +72,22 @@ header {
   color: #F3F3F8;
 }
 
-.navbar-list-item.active {
+.navbar-list-item.active, .navbar-list-item:hover {
   color:#F1D8B0;
 }
 
 /* navigation */
 .navigation{
   margin: 0;
-    padding: 0;
-    position: fixed;
-    right: 30px;
-    list-style: none;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+  padding: 0;
+  position: fixed;
+  right: 30px;
+  list-style: none;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .navigation li {
@@ -115,15 +114,8 @@ header {
 }
 
 /* section one */
-/* .section-one {
-  display: flex;
-  margin: 80px 100px 200px 100px;
-  align-items: center;
-  justify-content: space-between;
-} */
-
 .section-one {
-  height: 100vh;
+  height: 100dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -149,10 +141,6 @@ header {
   padding-top: 100px;
   margin: 0 100px 0 100px;
 }
-
-/* .section-two-text-container {
-  margin: 50px 0 50px 0;
-} */
 
 .section-two h2 {
   text-align: center;
