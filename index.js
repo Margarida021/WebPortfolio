@@ -13,3 +13,4 @@ const bullets = document.querySelector('.navigation');
 // job-title changing on load
 
 // items appear on scroll section
+ScrollReveal().reveal('.about-me');
