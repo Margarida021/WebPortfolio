@@ -291,7 +291,7 @@ header {
   justify-items: center;
   margin-top: 60px;
   padding: 0 70px 0 70px;
-  gap: 40px;
+  gap: 30px;
 
 }
 
@@ -374,6 +374,11 @@ header {
   align-items: center;
   justify-content: center;
   border: 3px solid #F1D8B0;
+  transition: 0.5s;
+}
+
+.btn-talk:hover {
+  transform: scale(1.2);
 }
 
 .btn-download {
@@ -390,7 +395,13 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: 0.5s;
 }
+
+.btn-download:hover {
+  transform: scale(1.2);
+}
+
 
 /* footer */
 footer {
