@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   <script src="https://kit.fontawesome.com/5e91a1c731.js" crossorigin="anonymous"></script>
-  <!-- <script src="https://unpkg.com/scrollreveal"></script> -->
   <script defer src="index.js"></script>
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 </head>
@@ -51,7 +50,11 @@
 
   <section id="aboutme" class="section-two">
     <h2 class="animate__fadeInUp about-me">About Me</h2>
-    <p class="p-aboutme">Hello, I'm Margarida and I come from a <span>background in Design</span>. Recently, I decided to embarked on an new career path as a <span>junior full-stack developer</span>. This transition was driven by my interest in coding and the desire to join both areas in my work.</p>
+    <div class="test">
+      <p class="p-aboutme">Hello, I'm Margarida and I come from a <span>background in Design</span>. Recently, I decided to embarked on an new career path as a <span>junior full-stack developer</span>. This transition was driven by my interest in coding and the desire to join both areas in my work.</p>
+      <!-- <img src="assets/images/WhatsApp Image 2023-09-25 at 14.16.54.jpg" alt="" class="aboutme-photo"> -->
+    </div>
+
     <div class="section-two-text-container">
       <div class="education-section">
         <h3>Education_</h3>
@@ -183,6 +186,35 @@
             <p class="p-language">VSCode</p>
           </div>
 
+          <div class="skill-item">
+            <div class="skill-icon">
+              <i class="devicon-bootstrap-plain icon-img"></i>
+            </div>
+            <p class="p-language">Bootstrap</p>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-icon">
+            <i class="devicon-git-plain icon-img"></i>
+            </div>
+            <p class="p-language">Git</p>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-icon">
+              <i class="devicon-github-original icon-img"></i>
+            </div>
+            <p class="p-language">GitHub</p>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-icon">
+              <i class="devicon-vuejs-plain icon-img"></i>
+            </div>
+            <p class="p-language">VueJs</p>
+          </div>
+
+
         </div>
       </div>
     </div>
@@ -190,42 +222,36 @@
 
   <section id="projects" class="section-three">
     <h2 class="projects">Projects</h2>
-    <p class="p-projects">Some projects developed</p>
+    <p class="p-projects">These are some projects I developed either alone or in a team.</p>
     <div class="projects-container">
 
       <div class="project">
         <div class="project-image">
-          <img src="assets/images/water_me_mockup.png" alt="project" class="project-image">
+          <a href="./waterme.html"><img src="assets/images/water_me_cover.png" alt="project" class="project-image"></a>
         </div>
         <div class="project-text">
           <h3>Water Me_ 2023</h3>
-          <p class="p-subtitle">Water Me is a web application designed to help you remember when and how to care of your plants, so they can grow strong and healthy.
-          <br>
-          Developed in just two week with a team of 4 people.
-          </p>
+          <p class="p-subtitle">Water Me is a web application designed as the final project for the Le Wagon bootcamp.</p>
         </div>
       </div>
 
       <div class="project">
         <div class="project-image">
-          <img src="assets/images/le_truc_mockup.png" alt="project" class="project-image">
+          <a href="./letruc.html"><img src="assets/images/le_truc_mockup.png" alt="project" class="project-image"></a>
         </div>
         <div class="project-text">
           <h3>Le Truc_ 2023</h3>
-          <p class="p-subtitle">An Airbnb clone, designed for a project during the bootcamp, where you can rent furniture and other stuff inside Le Wagon.
-          <br>
-          Done in a week with a team of 4 people.
-          </p>
+          <p class="p-subtitle">Le Truc is an Airbnb clone, designed for a project during the Le Wagon bootcamp.</p>
         </div>
       </div>
 
       <div class="project">
         <div class="project-image">
-          <img src="assets/images/le_truc_mockup.png" alt="project" class="project-image">
+          <a href="./pawperinos.html"><img src="assets/images/pawperinos_cover.png" alt="project" class="project-image"></a>
         </div>
         <div class="project-text">
           <h3>Pawperinos_ 2023</h3>
-          <p class="p-subtitle">Pawperinos was designed as a landing page project for StepByTech phase 1 and 2.</p>
+          <p class="p-subtitle">Pawperinos was designed as a landing page project for StepByTech program.</p>
         </div>
       </div>
 

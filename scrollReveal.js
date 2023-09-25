@@ -5,17 +5,17 @@ ScrollReveal({ reset: true });
 ScrollReveal().reveal('.section-one', { delay: 90 });
 
 // section 2
-ScrollReveal().reveal('.about-me', { delay: 150 });
-ScrollReveal().reveal('.p-aboutme', { delay: 150 });
-ScrollReveal().reveal('.education-section', { delay: 350 });
-ScrollReveal().reveal('.skills-section', { delay: 150 });
+ScrollReveal().reveal('.about-me');
+ScrollReveal().reveal('.p-aboutme');
+ScrollReveal().reveal('.education-section');
+ScrollReveal().reveal('.skills-section');
 
 // section 3
-ScrollReveal().reveal('.projects', { delay: 150 });
-ScrollReveal().reveal('.p-projects', { delay: 150 });
-ScrollReveal().reveal('.projects-container', { delay: 350 });
+ScrollReveal().reveal('.projects');
+ScrollReveal().reveal('.p-projects');
+ScrollReveal().reveal('.projects-container');
 
 // section 4
-ScrollReveal().reveal('.contacts', { delay: 150 });
-ScrollReveal().reveal('.p-contacts', { delay: 150 });
-ScrollReveal().reveal('.contact-list', { delay: 350 });
+ScrollReveal().reveal('.contacts');
+ScrollReveal().reveal('.p-contacts');
+ScrollReveal().reveal('.contact-list');
