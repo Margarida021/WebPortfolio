@@ -20,7 +20,7 @@ html {
 body {
   font-family: 'Space Mono', monospace;
   color: #F3F3F8;
-  background: url(assets/images/portfolio_background-01.png) center repeat, #222038;
+  background: url(../assets/images/portfolio_background-01.png) center repeat, #222038;
   background-size: 12%;
   margin: 0;
   padding: 0;
@@ -45,6 +45,7 @@ header {
   top: 0;
   width: 100%;
   transition: all 0.5s;
+  z-index: 99;
 }
 
 .navbar {
@@ -134,7 +135,7 @@ header {
 
 /* section two */
 .section-two {
-  height: 150vh;
+  height: 155vh;
   display: flex;
   flex-direction: column;
   align-items:center ;
