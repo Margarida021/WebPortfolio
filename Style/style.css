@@ -116,7 +116,7 @@ header {
 
 /* section one */
 .section-one {
-  height: 100dvh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -135,7 +135,7 @@ header {
 
 /* section two */
 .section-two {
-  height: 155vh;
+  min-height: 150dvh;
   display: flex;
   flex-direction: column;
   align-items:center ;
@@ -164,16 +164,6 @@ header {
   text-align: left;
   width: 900px;
 }
-
-/* .test {
-  display: flex;
-  width: 500px;
-  gap: 20px;
-}
-.aboutme-photo {
-  height: 200px;
-  border-radius: 10px;
-} */
 
 .section-two .p-title {
   font-weight: 400;
@@ -256,7 +246,7 @@ header {
 
 /* section three */
 .section-three {
-  height: 100vh;
+  min-height: 100dvh;
   text-align: center;
   padding-top: 100px;
   margin: 0 100px 0 100px;
@@ -320,7 +310,7 @@ header {
 
 /* section four */
 .section-four {
-  height: 100vh;
+  min-height: 100dvh;
   display: flex;
   flex-direction: column;
   align-items: center;

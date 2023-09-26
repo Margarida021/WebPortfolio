@@ -9,10 +9,27 @@ window.addEventListener('scroll', () => {
 });
 
 // navbar item active on section
+let sections = document.querySelectorAll('section');
+let navItems = document.querySelectorAll('.navbar-list a');
+
+window.onscroll = () => {
+  sections.forEach(sec => {
+    let top = window.scrollY;
+    let offset = sec.offsetTop - 150;
+    let height = sec.offsetHeight;
+    let id = sec.getAttribute('id');
+    if(top >= offset && top < offset + height) {
+      navItems.forEach(items => {
+        items.classList.remove('active');
+        document.querySelector('.navbar-list a[href*='+ id + ']').classList.add('active');
+      });
+    };
+  });
+};
 
 // nagivation dots active on section
-const sections = document.querySelectorAll('section');
-const bullets = document.querySelector('.navigation');
+// const sections = document.querySelectorAll('section');
+// const bullets = document.querySelector('.navigation');
 
 
 
