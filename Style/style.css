@@ -209,20 +209,32 @@ header {
   margin-top: 100px;
 }
 
-.education-item,
 .professional-item {
   display: flex;
   gap: 10px;
   align-items: flex-start;
 }
 
-.education-item-info,
+.education-item {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
 .professional-item-info {
   display: flex;
 }
 
-.education-line,
+.education-item-info {
+  display: flex;
+}
+
 .professional-line {
+  left: -21px;
+  position: relative;
+}
+
+.education-line {
   left: -21px;
   position: relative;
 }
