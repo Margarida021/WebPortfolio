@@ -1,279 +1,431 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Free Web tutorials">
-  <meta name="keywords" content="HTML, CSS, JavaScript">
-  <meta name="author" content="Margarida Almeida">
-  <title>Portfolio</title>
-  <link rel="" href="favicon.ico">
-  <link rel="stylesheet" href="./Style/style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Sriracha&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <script src="https://kit.fontawesome.com/5e91a1c731.js" crossorigin="anonymous"></script>
-  <script defer src="./Script/index.js"></script>
-  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Margarida Almeida" />
+    <title>Portfolio</title>
+    <link rel="" href="favicon.ico" />
+    <link rel="stylesheet" href="./Style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Sriracha&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/5e91a1c731.js"
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./Script/index.js"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  </head>
+  <body>
+    <header class="header">
+      <div id="nav" class="navbar">
+        <p><a href="#home" class="navbar-list-item">PORTFOLIO</a></p>
+        <ul class="navbar-list">
+          <li><a href="#home" class="navbar-list-item active">Home</a></li>
+          <li><a href="#aboutme" class="navbar-list-item">About Me</a></li>
+          <li><a href="#projects" class="navbar-list-item">Projects</a></li>
+          <li><a href="#contacts" class="navbar-list-item">Contacts</a></li>
+        </ul>
+      </div>
+    </header>
 
-  <header class="header">
-    <div id="nav" class="navbar">
-      <p><a href="#home" class="navbar-list-item">PORTFOLIO</a></p>
-      <ul class="navbar-list">
-        <li><a href="#home" class="navbar-list-item active">Home</a></li>
-        <li><a href="#aboutme" class="navbar-list-item">About Me</a></li>
-        <li><a href="#projects" class="navbar-list-item">Projects</a></li>
-        <li><a href="#contacts" class="navbar-list-item">Contacts</a></li>
-      </ul>
-    </div>
-  </header>
+    <ul class="navigation">
+      <li><a href="#home" class="navigation-item selected"></a></li>
+      <li><a href="#aboutme" class="navigation-item"></a></li>
+      <li><a href="#projects" class="navigation-item"></a></li>
+      <li><a href="#contacts" class="navigation-item"></a></li>
+    </ul>
 
-  <ul class="navigation">
-    <li><a href="#home" class="navigation-item selected"></a></li>
-    <li><a href="#aboutme" class="navigation-item"></a></li>
-    <li><a href="#projects" class="navigation-item"></a></li>
-    <li><a href="#contacts" class="navigation-item"></a></li>
-  </ul>
-
-  <section id="home" class="section-one">
-      <h3><a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.herokuapp.com?font=space+mono&duration=4000&pause=350&color=F3F3F8&center=true&vCenter=true&width=435&lines=Junior+Full-Stack+Developer;Designer" alt="Typing SVG" /></a></h3>
-      <h1>Margarida<br>Almeida</h1>
+    <section id="home" class="section-one">
+      <h3>
+        <a href="https://git.io/typing-svg"
+          ><img
+            src="https://readme-typing-svg.herokuapp.com?font=space+mono&duration=4000&pause=350&color=F3F3F8&center=true&vCenter=true&width=435&lines=Frontend+Developer;Designer"
+            alt="Typing SVG"
+        /></a>
+      </h3>
+      <h1>Margarida<br />Almeida</h1>
       <div class="section-one-buttons">
         <a href="#contacts" class="btn-talk">Let's Talk</a>
-        <a href="assets/ana-margarida-almeida-cv23.pdf" download="" class="btn-download">Download CV</a>
+        <a
+          href="assets/Ana-Margarida-Almeida_CV2024.pdf"
+          download=""
+          class="btn-download"
+          >Download CV</a
+        >
       </div>
-  </section>
+    </section>
 
-  <section id="aboutme" class="section-two">
-    <h2 class="animate__fadeInUp about-me">About Me</h2>
-    <div class="test">
-      <p class="p-aboutme">Hello, I'm Margarida and I come from a <span>background in Design</span>. Recently, I decided to embarked on an new career path as a <span>junior full-stack developer</span>. This transition was driven by my interest in coding and the desire to join both areas in my work.</p>
-    </div>
+    <section id="aboutme" class="section-two">
+      <h2 class="animate__fadeInUp about-me">About Me</h2>
+      <div class="test">
+        <p class="p-aboutme">
+          My name is Margarida and I'm a <span>Frontend Developer</span> with a background in
+          <span>Design</span>. Although these two areas are different, I believe they
+          complement each other well, allowing me to bring a unique perspective
+          to my work.
+          </br>
+          </br>
+          I've been working as a
+          developer for a year now, primarily using <span>Vue.js</span> for various projects.
+          I'm driven by <span>curiosity</span> and a <span>constant desire to learn</span>. I find it
+          exciting to discover better ways of doing things I thought I already
+          knew. I thrive in an <span>organized and collaborative team environment</span>,
+          where <span>clear goals, good communication, and shared knowledge are key to
+            success</span>. So, let's work together?
+        </p>
+      </div>
 
-    <div class="section-two-text-container">
-      <div class="education-section">
-        <h3>Education_</h3>
-        <div class="education-item">
-          <i class="fa-solid fa-star star"></i>
-          <div>
-            <p class="p-title"><span>Web Development Bootcamp</span> Le Wagon, Jul 2023 - Sep 2023</p>
-            <div class="education-item-info">
-              <img src="./assets/icons/portfolio_line.svg" alt="white-line" class="education-line">
-              <p class="p-subtitle">• 9 intense weeks of coding bootcamp.
-                <br>• Learned new software skills in HTML, CSS, JS, SQL, Ruby on Rails, Heroku, Git and Github.
-                <br>• Pitch for the web app project idea of WaterMe and development in 2 weeks in a team of 4 people.
+      <div class="section-two-text-container">
+        <div class="professional-section">
+          <h3>Profissional Experience_</h3>
+          <div class="professional-item">
+            <i class="fa-solid fa-star star"></i>
+            <div>
+              <p class="p-title">
+                <span>Frontend Developer</span> ITGest, Nov 2023 - Present
               </p>
+              <div class="professional-item-info">
+                <img
+                  src="./assets/icons/portfolio_line.svg"
+                  alt="white-line"
+                  class="professional-line"
+                />
+                <p class="p-subtitle">
+                  • Front-end Software Engineer for different projects within the ITGest Group. <br />• Use of Vue.js as the main technology.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <br>
-        <div class="education-item">
-          <i class="fa-solid fa-star star"></i>
-          <div>
-            <p class="p-title"><span>StepByTech</span> Le Wagon and Lisbon Municipality, Apr 2023 - May 2023</p>
-            <div class="education-item-info">
-              <img src="./assets/icons/portfolio_line.svg" alt="white-line" class="education-line">
-              <p class="p-subtitle">• Participated in the first and second phase of the program.
-              <br>• Created a landing page for a project idea "Pawperinos" to be able to participate in the second and third phase.</p>
+
+        <div class="education-section">
+          <h3>Education_</h3>
+          <div class="education-item">
+            <i class="fa-solid fa-star star"></i>
+            <div>
+              <p class="p-title">
+                <span>Web Development Bootcamp</span> Le Wagon, Jul 2023 - Sep
+                2023
+              </p>
+              <div class="education-item-info">
+                <img
+                  src="./assets/icons/portfolio_line.svg"
+                  alt="white-line"
+                  class="education-line"
+                />
+                <p class="p-subtitle">
+                  • 9 intense weeks of coding bootcamp. <br />• Learned new
+                  software skills in HTML, CSS, JS, SQL, Ruby on Rails, Heroku,
+                  Git and Github. <br />• Pitch for the web app project idea of
+                  WaterMe and development in 2 weeks in a team of 4 people.
+                </p>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="education-item">
+            <i class="fa-solid fa-star star"></i>
+            <div>
+              <p class="p-title">
+                <span>StepByTech</span> Le Wagon and Lisbon Municipality, Apr
+                2023 - May 2023
+              </p>
+              <div class="education-item-info">
+                <img
+                  src="./assets/icons/portfolio_line.svg"
+                  alt="white-line"
+                  class="education-line"
+                />
+                <p class="p-subtitle">
+                  • Participated in the first and second phase of the program.
+                  <br />• Created a landing page for a project idea "Pawperinos"
+                  to be able to participate in the second and third phase.
+                </p>
+              </div>
+            </div>
+          </div>
+          <br />
+          <div class="education-item">
+            <i class="fa-solid fa-star star"></i>
+            <div>
+              <p class="p-title">
+                <span>Bachelor Degree in Design</span> Faculty of Architecture
+                of Lisbon, Sep 2015 - Jul 2018
+              </p>
+              <div class="education-item-info">
+                <img
+                  src="./assets/icons/portfolio_line.svg"
+                  alt="white-line"
+                  class="education-line"
+                />
+                <p class="p-subtitle">
+                  • Learned Adobe Photoshop, Illustrator, Indesign. <br />• With
+                  one semester Erasmus at University of Budapest in Hungary.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <br>
-        <div class="education-item">
-          <i class="fa-solid fa-star star"></i>
-          <div>
-            <p class="p-title"><span>Bachelor Degree in Design</span> Faculty of Architecture of Lisbon, Sep 2015 - Jul 2018</p>
-            <div class="education-item-info">
-              <img src="./assets/icons/portfolio_line.svg" alt="white-line" class="education-line">
-              <p class="p-subtitle">• Learned Adobe Photoshop, Illustrator, Indesign.
-              <br>• With one semester Erasmus at University of Budapest in Hungary.</p>
+
+        <div class="skills-section">
+          <h3>Skills_</h3>
+
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="devicon-ruby-plain icon-img"></i>
+              </div>
+              <p class="p-language">Ruby</p>
             </div>
+
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="devicon-rails-plain icon-img"></i>
+              </div>
+              <p class="p-language">Ruby on Rails</p>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="devicon-html5-plain icon-img"></i>
+              </div>
+              <p class="p-language">HTML5</p>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="devicon-css3-plain icon-img"></i>
+              </div>
+              <p class="p-language">CSS</p>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="devicon-javascript-plain icon-img"></i>
+              </div>
+              <p class="p-language">JavaScript</p>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="devicon-vuejs-plain icon-img"></i>
+              </div>
+              <p class="p-language">VueJs</p>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="devicon-react-plain icon-img"></i>
+              </div>
+              <p class="p-language">React</p>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="devicon-typescript-plain icon-img"></i>
+              </div>
+              <p class="p-language">Typescript</p>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="devicon-vuetify-plain icon-img"></i>
+              </div>
+              <p class="p-language">Vuetify</p>
+            </div>
+          </div>
+          <div class="skills-list">
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="devicon-bootstrap-plain icon-img"></i>
+              </div>
+              <p class="p-language">Bootstrap</p>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="devicon-sass-original icon-img"></i>
+              </div>
+              <p class="p-language">Sass</p>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="devicon-vscode-plain icon-img"></i>
+              </div>
+              <p class="p-language">VSCode</p>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="devicon-git-plain icon-img"></i>
+              </div>
+              <p class="p-language">Git</p>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="devicon-github-original icon-img"></i>
+              </div>
+              <p class="p-language">GitHub</p>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="devicon-npm-original-wordmark icon-img"></i>
+              </div>
+              <p class="p-language">NPM</p>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="devicon-figma-plain icon-img"></i>
+              </div>
+              <p class="p-language">Figma</p>
+            </div>
+
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="devicon-photoshop-plain icon-img"></i>
+              </div>
+              <p class="p-language">Photoshop</p>
+            </div>
+            <div class="skill-item">
+              <div class="skill-icon">
+                <i class="devicon-illustrator-plain icon-img"></i>
+              </div>
+              <p class="p-language">Illustrator</p>
+            </div>
+
           </div>
         </div>
       </div>
+    </section>
 
-      <div class="skills-section">
-        <h3>Skills_</h3>
-
-        <div class="skills-list">
-          <div class="skill-item">
-            <div class="skill-icon">
-              <i class="devicon-ruby-plain icon-img"></i>
-            </div>
-            <p class="p-language">Ruby</p>
+    <section id="projects" class="section-three">
+      <h2 class="projects">Projects</h2>
+      <p class="p-projects">
+        These are some projects I developed either alone or in a team.
+      </p>
+      <div class="projects-container">
+        <div class="project">
+          <div class="project-image">
+            <a href="./HTML/waterme.html"
+              ><img
+                src="assets/images/WaterMe/water_me_cover.png"
+                alt="project"
+                class="project-image"
+            /></a>
           </div>
-
-          <div class="skill-item">
-            <div class="skill-icon">
-              <i class="devicon-rails-plain icon-img"></i>
-            </div>
-            <p class="p-language">Ruby on Rails</p>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-icon">
-              <i class="devicon-html5-plain icon-img"></i>
-            </div>
-            <p class="p-language">HTML5</p>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-icon">
-              <i class="devicon-css3-plain icon-img"></i>
-            </div>
-            <p class="p-language">CSS</p>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-icon">
-              <i class="devicon-javascript-plain icon-img"></i>
-            </div>
-            <p class="p-language">JavaScript</p>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-icon">
-              <i class="devicon-figma-plain icon-img"></i>
-            </div>
-            <p class="p-language">Figma</p>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-icon">
-              <i class="devicon-photoshop-plain icon-img"></i>
-            </div>
-            <p class="p-language">Photoshop</p>
-          </div>
-          <div class="skill-item">
-            <div class="skill-icon">
-              <i class="devicon-illustrator-plain icon-img"></i>
-            </div>
-            <p class="p-language">Illustrator</p>
+          <div class="project-text">
+            <h3>Water Me_ 2023</h3>
+            <p class="p-subtitle">
+              Water Me is a web application designed as the final project for
+              the Le Wagon bootcamp.
+            </p>
           </div>
         </div>
 
-        <div class="skills-list">
-          <div class="skill-item">
-            <div class="skill-icon">
-              <i class="devicon-sass-original icon-img"></i>
-            </div>
-            <p class="p-language">Sass</p>
+        <div class="project">
+          <div class="project-image">
+            <a href="./HTML/letruc.html"
+              ><img
+                src="assets/images/LeTruc/le_truc_mockup.png"
+                alt="project"
+                class="project-image"
+            /></a>
           </div>
-
-          <div class="skill-item">
-            <div class="skill-icon">
-              <i class="devicon-sqlite-plain icon-img"></i>
-            </div>
-            <p class="p-language">SQLite</p>
+          <div class="project-text">
+            <h3>Le Truc_ 2023</h3>
+            <p class="p-subtitle">
+              Le Truc is an Airbnb clone, designed for a project during the Le
+              Wagon bootcamp.
+            </p>
           </div>
+        </div>
 
-          <div class="skill-item">
-            <div class="skill-icon">
-              <i class="devicon-postgresql-plain icon-img"></i>
-            </div>
-            <p class="p-language">Postgresql</p>
+        <div class="project">
+          <div class="project-image">
+            <a href="./HTML/pawperinos.html"
+              ><img
+                src="assets/images/Pawperinos/pawperinos_cover.png"
+                alt="project"
+                class="project-image"
+            /></a>
           </div>
-
-          <div class="skill-item">
-            <div class="skill-icon">
-              <i class="devicon-vscode-plain icon-img"></i>
-            </div>
-            <p class="p-language">VSCode</p>
+          <div class="project-text">
+            <h3>Pawperinos_ 2023</h3>
+            <p class="p-subtitle">
+              Pawperinos was designed as a landing page project for StepByTech
+              program.
+            </p>
           </div>
-
-          <div class="skill-item">
-            <div class="skill-icon">
-              <i class="devicon-bootstrap-plain icon-img"></i>
-            </div>
-            <p class="p-language">Bootstrap</p>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-icon">
-            <i class="devicon-git-plain icon-img"></i>
-            </div>
-            <p class="p-language">Git</p>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-icon">
-              <i class="devicon-github-original icon-img"></i>
-            </div>
-            <p class="p-language">GitHub</p>
-          </div>
-
-          <div class="skill-item">
-            <div class="skill-icon">
-              <i class="devicon-vuejs-plain icon-img"></i>
-            </div>
-            <p class="p-language">VueJs</p>
-          </div>
-
-
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="projects" class="section-three">
-    <h2 class="projects">Projects</h2>
-    <p class="p-projects">These are some projects I developed either alone or in a team.</p>
-    <div class="projects-container">
-
-      <div class="project">
-        <div class="project-image">
-          <a href="./HTML/waterme.html"><img src="assets/images/WaterMe/water_me_cover.png" alt="project" class="project-image"></a>
-        </div>
-        <div class="project-text">
-          <h3>Water Me_ 2023</h3>
-          <p class="p-subtitle">Water Me is a web application designed as the final project for the Le Wagon bootcamp.</p>
-        </div>
+    <section id="contacts" class="section-four">
+      <h2 class="contacts">Contacts</h2>
+      <p class="p-contacts">
+        If you are interested in working with me, feel free to reach out in one
+        of these medias
+      </p>
+      <div class="contact-list">
+        <a href="mailto: ana.margarida.almeida92@gmail.com" target="_blank"
+          ><i class="fa-solid fa-envelope contact-list-item"></i
+        ></a>
+        <a href="https://github.com/Margarida021" target="_blank"
+          ><i class="fa-brands fa-github contact-list-item"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/margaridaalmeida21" target="_blank"
+          ><i class="fa-brands fa-linkedin-in contact-list-item"></i
+        ></a>
       </div>
+    </section>
 
-      <div class="project">
-        <div class="project-image">
-          <a href="./HTML/letruc.html"><img src="assets/images/LeTruc/le_truc_mockup.png" alt="project" class="project-image"></a>
-        </div>
-        <div class="project-text">
-          <h3>Le Truc_ 2023</h3>
-          <p class="p-subtitle">Le Truc is an Airbnb clone, designed for a project during the Le Wagon bootcamp.</p>
-        </div>
-      </div>
-
-      <div class="project">
-        <div class="project-image">
-          <a href="./HTML/pawperinos.html"><img src="assets/images/Pawperinos/pawperinos_cover.png" alt="project" class="project-image"></a>
-        </div>
-        <div class="project-text">
-          <h3>Pawperinos_ 2023</h3>
-          <p class="p-subtitle">Pawperinos was designed as a landing page project for StepByTech program.</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <section id="contacts" class="section-four">
-    <h2 class="contacts">Contacts</h2>
-    <p class="p-contacts">If you are interested in working with me, feel free to reach out in one of these medias</p>
-    <div class="contact-list">
-      <a href="mailto: ana.margarida.almeida92@gmail.com" target="_blank"><i class="fa-solid fa-envelope contact-list-item"></i></a>
-      <a href="https://github.com/Margarida021" target="_blank"><i class="fa-brands fa-github contact-list-item"></i></a>
-      <a href="https://www.linkedin.com/in/margarida-almeida21/" target="_blank"><i class="fa-brands fa-linkedin-in contact-list-item"></i></a>
-    </div>
-  </section>
-
-  <footer>
-    <ul class="footer-list">
-      <li><a href="https://github.com/Margarida021" target="_blank"><i class="fa-brands fa-github fa-xl footer-list-item"></i></a></li>
-      <li><a href="https://www.linkedin.com/in/margarida-almeida21/" target="_blank"><i class="fa-brands fa-linkedin-in fa-xl footer-list-item"></i></a></li>
-      <li><img src="./assets/icons/portfolio_line.svg" alt="white-line" class="line"></li>
-    </ul>
-  </footer>
-  <script src="Script/scrollReveal.js"></script>
-</body>
+    <footer>
+      <ul class="footer-list">
+        <li>
+          <a href="mailto: ana.margarida.almeida92@gmail.com" target="_blank">
+            <i class="fa-solid fa-envelope fa-xl footer-list-item"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/Margarida021" target="_blank"
+            ><i class="fa-brands fa-github fa-xl footer-list-item"></i
+          ></a>
+        </li>
+        <li>
+          <a
+            href="https://www.linkedin.com/in/margaridaalmeida21"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin-in fa-xl footer-list-item"></i
+          ></a>
+        </li>
+        <li>
+          <img
+            src="./assets/icons/portfolio_line.svg"
+            alt="white-line"
+            class="line"
+          />
+        </li>
+      </ul>
+    </footer>
+    <script src="Script/scrollReveal.js"></script>
+  </body>
 </html>

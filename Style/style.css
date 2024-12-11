@@ -1,15 +1,25 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
 
 ::before,
 ::after {
-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* utility */
-.section-one, .about-me, .p-aboutme, .education-section, .skills-section, .projects, .p-projects, .projects-container, .contacts, .p-contacts, .contact-list {
+.section-one,
+.about-me,
+.p-aboutme,
+.education-section,
+.skills-section,
+.projects,
+.p-projects,
+.projects-container,
+.contacts,
+.p-contacts,
+.contact-list {
   visibility: hidden;
 }
 
@@ -18,22 +28,22 @@ html {
 }
 
 body {
-  font-family: 'Space Mono', monospace;
-  color: #F3F3F8;
-  background: url(../assets/images/portfolio_background-01.png) center repeat, #222038;
+  font-family: "Space Mono", monospace;
+  color: #f3f3f8;
+  background: url(../assets/images/portfolio_background-01.png) center repeat,
+    #222038;
   background-size: 12%;
   margin: 0;
   padding: 0;
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   display: none;
 }
 
 a {
   text-decoration: none;
 }
-
 
 h3 {
   font-weight: 400;
@@ -70,11 +80,12 @@ header {
 }
 
 .navbar-list-item {
-  color: #F3F3F8;
+  color: #f3f3f8;
 }
 
-.navbar-list-item.active, .navbar-list-item:hover {
-  color:#F1D8B0;
+.navbar-list-item.active,
+.navbar-list-item:hover {
+  color: #f1d8b0;
 }
 
 /* navigation */
@@ -93,7 +104,7 @@ header {
 .navigation-item {
   width: 8px;
   height: 8px;
-  background: #F3F3F8;
+  background: #f3f3f8;
   border-radius: 50%;
   transition: all 0.3s;
   display: inline-block; /* Added display property */
@@ -103,7 +114,7 @@ header {
 .navigation-item:hover,
 .navigation-item.selected {
   transform: scale(1.5);
-  background: #F1D8B0;
+  background: #f1d8b0;
   cursor: pointer;
 }
 
@@ -127,8 +138,8 @@ header {
 
 .section-one h1 {
   margin-bottom: 40px;
-  font-family: 'Sriracha';
-  color:#F1D8B0;
+  font-family: "Sriracha";
+  color: #f1d8b0;
   font-size: 120px;
   line-height: 125px;
 }
@@ -138,7 +149,7 @@ header {
   min-height: 150dvh;
   display: flex;
   flex-direction: column;
-  align-items:center ;
+  align-items: center;
   padding-top: 100px;
   margin: 0 100px 0 100px;
 }
@@ -146,13 +157,13 @@ header {
 .section-two h2 {
   text-align: center;
   font-size: 100px;
-  font-family: 'Sriracha';
-  color:#F1D8B0;
+  font-family: "Sriracha";
+  color: #f1d8b0;
 }
 
 .section-two h3 {
   text-align: left;
-  color:#F1D8B0;
+  color: #f1d8b0;
   font-weight: 700;
   font-size: 30px;
   margin-bottom: 15px;
@@ -162,7 +173,11 @@ header {
   font-weight: 400;
   font-size: 15px;
   text-align: left;
-  width: 900px;
+  width: 1000px;
+}
+
+.section-two .p-aboutme span {
+  color: #f1d8b0;
 }
 
 .section-two .p-title {
@@ -171,7 +186,7 @@ header {
 }
 
 .p-title span {
-  color:#F1D8B0;
+  color: #f1d8b0;
   font-size: 18px;
   font-weight: 700;
 }
@@ -181,26 +196,33 @@ header {
 }
 
 .section-two .p-language {
-  color: #F3F3F8;
+  color: #f3f3f8;
   font-weight: 700;
   text-align: center;
 }
 
 .education-section {
-  margin-top: 60px;
+  margin-top: 70px;
 }
 
-.education-item {
+.professional-section {
+  margin-top: 100px;
+}
+
+.education-item,
+.professional-item {
   display: flex;
   gap: 10px;
   align-items: flex-start;
 }
 
-.education-item-info{
+.education-item-info,
+.professional-item-info {
   display: flex;
 }
 
-.education-line {
+.education-line,
+.professional-line {
   left: -21px;
   position: relative;
 }
@@ -208,14 +230,14 @@ header {
 .star {
   position: relative;
   top: 5px;
-  color: #F1D8B0;
+  color: #f1d8b0;
   font-size: 18px;
 }
 
 .skills-section {
   display: flex;
   flex-direction: column;
-  margin-top: 60px;
+  margin-top: 80px;
 }
 
 .skills-list {
@@ -241,7 +263,7 @@ header {
 
 .icon-img {
   font-size: 50px;
-  color: #F1D8B0;
+  color: #f1d8b0;
 }
 
 /* section three */
@@ -255,14 +277,14 @@ header {
 .section-three h2 {
   text-align: center;
   font-size: 100px;
-  font-family: 'Sriracha';
-  color:#F1D8B0;
+  font-family: "Sriracha";
+  color: #f1d8b0;
 }
 
 .section-three h3 {
   text-align: center;
   font-weight: 700;
-  color: #F1D8B0;
+  color: #f1d8b0;
   font-size: 20px;
   margin-bottom: 10px;
 }
@@ -282,7 +304,6 @@ header {
   margin-top: 60px;
   padding: 0 70px 0 70px;
   gap: 30px;
-
 }
 
 .project {
@@ -304,7 +325,7 @@ header {
   transition: 0.5s;
 }
 
-.project-image:hover{
+.project-image:hover {
   transform: scale(1.05);
 }
 
@@ -322,8 +343,8 @@ header {
 .section-four h2 {
   text-align: center;
   font-size: 100px;
-  font-family: 'Sriracha';
-  color:#F1D8B0;
+  font-family: "Sriracha";
+  color: #f1d8b0;
 }
 
 .section-four .p-contacts {
@@ -340,7 +361,7 @@ header {
 
 .contact-list-item {
   font-size: 50px;
-  color: #F1D8B0;
+  color: #f1d8b0;
 }
 
 /* buttons */
@@ -351,19 +372,19 @@ header {
 }
 
 .btn-talk {
-  background-color: #F1D8B0;
+  background-color: #f1d8b0;
   border-radius: 10px;
   width: 150px;
   height: 40px;
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-weight: 700;
   font-size: 18px;
-  color:  #222038;
+  color: #222038;
   text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 3px solid #F1D8B0;
+  border: 3px solid #f1d8b0;
   transition: 0.5s;
 }
 
@@ -372,15 +393,15 @@ header {
 }
 
 .btn-download {
-  font-family: 'Space Mono', monospace;
+  font-family: "Space Mono", monospace;
   font-weight: 700;
   font-size: 18px;
   width: 150px;
   height: 40px;
   background-color: #222038;
-  color: #F3F3F8;
+  color: #f3f3f8;
   border-radius: 10px;
-  border: 3px solid #F1D8B0;
+  border: 3px solid #f1d8b0;
   text-decoration: none;
   display: flex;
   align-items: center;
@@ -391,7 +412,6 @@ header {
 .btn-download:hover {
   transform: scale(1.07);
 }
-
 
 /* footer */
 footer {
@@ -410,7 +430,7 @@ footer {
 }
 
 .footer-list-item {
-  color:#F1D8B0;
+  color: #f1d8b0;
   font-size: 20px;
 }
 
@@ -431,8 +451,8 @@ footer {
 .project-individual h2 {
   text-align: center;
   font-size: 100px;
-  font-family: 'Sriracha';
-  color:#F1D8B0;
+  font-family: "Sriracha";
+  color: #f1d8b0;
 }
 .punch-line {
   font-size: 20px;
@@ -447,7 +467,7 @@ footer {
 }
 
 .project-individual span {
-  color: #F1D8B0;
+  color: #f1d8b0;
 }
 
 .project-images {
@@ -471,8 +491,8 @@ footer {
   z-index: 99;
 }
 
-.project-link a{
-  color: #F1D8B0;
+.project-link a {
+  color: #f1d8b0;
   cursor: pointer;
 }
 
